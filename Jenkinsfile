@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                sh 'sudo npm run build'
             }
         }
 
@@ -22,8 +22,8 @@ pipeline {
 
         stage('Serve (optional)') {
             steps {
-                sh 'npm install -g serve'
-                sh 'serve -s build -l 3000 &'
+                sh 'sudo npm install -g serve'
+                sh 'sudo serve -s build -l 3000 &'
             }
         }
     }
