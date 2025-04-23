@@ -26,6 +26,11 @@ pipeline {
                 sh 'sudo serve -s build -l 3000 &'
             }
         }
+        stage('Display(optional)') {
+            steps {
+                sh 'sudo localhost:8080'
+                
+            }
     }
 
     post {
