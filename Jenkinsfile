@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh 'sudo npm install'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'npm test -- --watchAll=false'
+                sh 'sudo npm test -- --watchAll=false'
             }
         }
 
