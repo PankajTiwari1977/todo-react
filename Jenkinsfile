@@ -3,6 +3,7 @@
 // It includes stages for installing dependencies, building the application, and deploying it to a Kubernetes cluster.
 // The pipeline is defined using the declarative syntax and runs on any available agent.
 // The pipeline is triggered by changes to the master branch of the Git repository.
+// # trigger added
 
 pipeline {
     agent any
