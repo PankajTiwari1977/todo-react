@@ -18,10 +18,10 @@ pipeline {
                 sh 'docker build -t my-react-app:v1 .'
             }
         }
-        //       stage('Push Docker Image') {
-        //     steps {
-        //         sh 'docker build -t my-react-app:v1 .'
-        //     }
-        // }        
+              stage('Push Docker Image') {
+            steps {
+                sh 'docker push pankajdevops2403/my-react-app:v1'
+            }
+        }        
 }
 }
