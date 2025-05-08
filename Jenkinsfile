@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // stages {
+    stages {
     //     stage('Install Dependencies') {
     //         steps {
     //             sh 'sudo npm install'
