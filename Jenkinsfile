@@ -15,7 +15,7 @@ pipeline {
         }
                stage('Build Docker Image') {
             steps {
-                sh 'docker build -t my-react-app:v2 .'
+                sh 'docker build -t pankajdevops2403/my-react-app:v2 .'
             }
         }
               stage('Push Docker Image') {
