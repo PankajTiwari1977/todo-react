@@ -22,6 +22,11 @@ pipeline {
             steps {
                 sh 'docker push pankajdevops2403/my-react-app:v2'
             }
+        }
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'kubectl apply -f deployment.yml'
+            }
         }        
 }
 }
