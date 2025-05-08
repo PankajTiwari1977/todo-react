@@ -1,3 +1,9 @@
+# jenkinsfile for a React application
+// This Jenkinsfile is used to build, test, and deploy a React application using Docker and Kubernetes.
+// It includes stages for installing dependencies, building the application, and deploying it to a Kubernetes cluster.
+// The pipeline is defined using the declarative syntax and runs on any available agent.
+// The pipeline is triggered by changes to the master branch of the Git repository.
+
 pipeline {
     agent any
 
