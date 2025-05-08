@@ -13,5 +13,15 @@ pipeline {
                 sh 'sudo npm run build'
             }
         }
+               stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t my-react-app:v1 .'
+            }
+        }
+        //       stage('Push Docker Image') {
+        //     steps {
+        //         sh 'docker build -t my-react-app:v1 .'
+        //     }
+        // }        
 }
 }
